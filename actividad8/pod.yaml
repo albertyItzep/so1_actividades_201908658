@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: actividad8
+  labels:
+    name: actividad8
+    year: '2024'
+spec:
+  containers:
+  - name: actividad8
+    image: nginx:1.27.2
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8001
